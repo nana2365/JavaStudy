@@ -41,31 +41,44 @@ public class Practice implements MethodInterface{
 			}
 		}
 		
-		return 0;
+		return max;
 	}
 
 	@Override
 	public int min(int[] arr) {
 		// TODO arr 안의 모든 값들 중 가장 작은 값을 찾아 return 한다.
-		return 0;
+		int min = arr[0];
+		
+		for(int n : arr) {
+			if(n < min ) {
+				min = n;
+			}
+		}
+		return min;
 	}
 
 	@Override
 	public String left(String input, int num) {
 		// TODO input 의 첫 글자 부터 num 개의 글자를 return 한다. substring 함수 이용
-		return null;
+		
+		String phone01= input.substring(0, 3);
+		return phone01;
 	}
 
 	@Override
 	public String right(String input, int num) {
 		// TODO input 의 마지막 글자 부터 num 개의 글자를 return 한다.
-		return null;
+		String phone03= input.substring(input.length()-4, input.length());
+		return phone03;
+		
 	}
 
 	@Override
 	public String mid(String input, int start, int num) {
 		// TODO input 의 start 번째 글자부터 num 개의 글자를 return 한다.
-		return null;
+		String phone02= input.substring(4, 8);
+		return phone02;
+		
 	}
 	
 	public static void main(String[] args) {
