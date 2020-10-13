@@ -61,23 +61,23 @@ public class Practice implements MethodInterface{
 	public String left(String input, int num) {
 		// TODO input 의 첫 글자 부터 num 개의 글자를 return 한다. substring 함수 이용
 		
-		String phone01= input.substring(0, 3);
-		return phone01;
+		String result= input.substring(0, num);
+		return result;
 	}
 
 	@Override
 	public String right(String input, int num) {
 		// TODO input 의 마지막 글자 부터 num 개의 글자를 return 한다.
-		String phone03= input.substring(input.length()-4, input.length());
-		return phone03;
+		String result= input.substring(input.length()-num);
+		return result;
 		
 	}
 
 	@Override
 	public String mid(String input, int start, int num) {
 		// TODO input 의 start 번째 글자부터 num 개의 글자를 return 한다.
-		String phone02= input.substring(4, 8);
-		return phone02;
+		return  input.substring(start, start+num);
+		
 		
 	}
 	
