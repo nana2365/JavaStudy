@@ -104,5 +104,6 @@ public class Practice implements MethodInterface{
 		
 		String phone03 = p.right(phoneNum, 4);
 		System.out.println("마지막 네글자: " + phone03);
+		//커밋테스트
 	}
 }
