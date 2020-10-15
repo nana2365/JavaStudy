@@ -7,6 +7,7 @@ public class FirstClass {
 		System.out.println("hello world"); // sysout �Է� �� => ctrl + space
 		
 		System.out.println("Good luck!!!");
+		
 	}
 
 }
